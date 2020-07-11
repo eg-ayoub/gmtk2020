@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class CharacterSwitcher : MonoBehaviour
 {
+
+    private PlayerController _controller;
+
     const float MIN_SWITCH_TIME = .5f;
     const float MAX_SWITCH_TIME = 6f;
 
@@ -22,6 +25,7 @@ public class CharacterSwitcher : MonoBehaviour
 
     private void Start()
     {
+        _controller = GetComponent<PlayerController>();
         ProcessSwitch();
         StartCoroutine(SwichLoop());
     }
@@ -55,6 +59,7 @@ public class CharacterSwitcher : MonoBehaviour
                 transform.GetChild(_c).gameObject.SetActive(false);
             }
         }
+        _controller.EndDash();
     }
 
     public int GetCharacterIndex()

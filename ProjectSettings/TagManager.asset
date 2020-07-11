@@ -7,6 +7,11 @@ TagManager:
   - Bullet
   - Enemy
   - PoEnemy
+  - TinkyEnemy
+  - LalaEnemy
+  - DipsyEnemy
+  - TinkyHit
+  - LalaHit
   layers:
   - Default
   - TransparentFX
@@ -21,11 +26,11 @@ TagManager:
   - Player
   - Enemy
   - PoEnemy
-  - 
-  - 
-  - 
-  - 
-  - 
+  - TinkyEnemy
+  - DipsyEnemy
+  - LalaEnemy
+  - TinkyHit
+  - LalaHit
   - 
   - 
   - 

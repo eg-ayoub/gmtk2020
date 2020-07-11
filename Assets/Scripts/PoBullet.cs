@@ -22,18 +22,18 @@ public class PoBullet : MonoBehaviour
         transform.position = new Vector3(transform.position.x, transform.position.y, 0);
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log("boom");
-        if (other.gameObject.CompareTag("PoEnemy"))
+        if (other.CompareTag("PoEnemy"))
         {
             other.gameObject.GetComponent<EnemyLife>().TakeDamage(damage);
             pool.Release(gameObject);
         }
     }
 
-    private void OnDrawGizmos()
-    {
-        Gizmos.DrawSphere(transform.position, 10);
-    }
+    // private void OnDrawGizmos()
+    // {
+    //     Gizmos.DrawSphere(transform.position, 10);
+    // }
 }
