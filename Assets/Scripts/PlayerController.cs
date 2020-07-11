@@ -13,6 +13,8 @@ public class PlayerController : MonoBehaviour
     private Vector2 _dashSpeed;
     private bool _dashOverride = false;
 
+    private bool _moveLock = false;
+
 
 
     private void Start()
@@ -28,7 +30,10 @@ public class PlayerController : MonoBehaviour
     {
         if (!_dashOverride)
         {
-            _rigidBody.velocity = _moveDirection * MOVE_SPEED;
+            if (!_moveLock)
+            {
+                _rigidBody.velocity = _moveDirection * MOVE_SPEED;
+            }
         }
         else
         {
@@ -46,5 +51,16 @@ public class PlayerController : MonoBehaviour
     {
         _dashOverride = false;
         _rigidBody.velocity = Vector3.zero;
+    }
+
+    public void LockMove()
+    {
+        _moveLock = true;
+        _rigidBody.velocity = Vector3.zero;
+    }
+
+    public void UnlockMove()
+    {
+        _moveLock = false;
     }
 }

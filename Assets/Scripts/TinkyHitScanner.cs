@@ -5,9 +5,19 @@ using UnityEngine;
 public class TinkyHitScanner : MonoBehaviour
 {
 
+    private PlayerController _controller;
+
     private bool _ready = true;
 
     private HashSet<GameObject> enemies;
+
+    private PlayerAnimator _animator;
+
+    private void Start()
+    {
+        _controller = GetComponentInParent<PlayerController>();
+        _animator = GetComponentInParent<PlayerAnimator>();
+    }
 
     public void Hit()
     {
@@ -18,7 +28,6 @@ public class TinkyHitScanner : MonoBehaviour
     {
         if (!_ready && other.CompareTag("TinkyEnemy"))
         {
-            Debug.Log("1 hit");
             enemies.Add(other.gameObject);
         }
     }
@@ -27,12 +36,15 @@ public class TinkyHitScanner : MonoBehaviour
     {
         _ready = false;
         enemies = new HashSet<GameObject>();
-        yield return new WaitForSecondsRealtime(.1f);
+        _controller.LockMove();
+        _animator.Attack();
+        yield return new WaitForSecondsRealtime(.15f);
         foreach (GameObject enemy in enemies)
         {
             enemy.GetComponent<EnemyLife>().TakeDamage(1);
         }
         enemies.Clear();
+        _controller.UnlockMove();
         _ready = true;
         yield return null;
     }

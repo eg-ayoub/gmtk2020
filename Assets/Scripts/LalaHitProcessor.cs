@@ -11,10 +11,13 @@ public class LalaHitProcessor : HitProcessor
 
     private float lastHit;
 
+    private PlayerAnimator _animator;
+
     private void Start()
     {
         _hitScanner = GetComponentInChildren<LalaHitScanner>();
         _controller = GetComponentInParent<PlayerController>();
+        _animator = GetComponentInParent<PlayerAnimator>();
     }
 
     public override void ProcessHit(Vector3 towards)
@@ -32,6 +35,7 @@ public class LalaHitProcessor : HitProcessor
         ProcessMiss(ref dashDir);
 
         _controller.StartDash(dashDir);
+        _animator.Attack();
         yield return new WaitForSecondsRealtime(.25f);
         _controller.EndDash();
         // have to process dash ?

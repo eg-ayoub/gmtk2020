@@ -24,7 +24,6 @@ public class PoBullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("boom");
         if (other.CompareTag("PoEnemy"))
         {
             other.gameObject.GetComponent<EnemyLife>().TakeDamage(damage);

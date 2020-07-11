@@ -5,7 +5,7 @@ using UnityEngine;
 public class BulletPool : MonoBehaviour
 {
     [SerializeField]
-    private GameObject bulletPrefab;
+    public GameObject bulletPrefab;
 
     const int START_BULLET_COUNT = 20;
 

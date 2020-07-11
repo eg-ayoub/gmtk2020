@@ -6,6 +6,7 @@ public class CharacterSwitcher : MonoBehaviour
 {
 
     private PlayerController _controller;
+    private PlayerAnimator _animator;
 
     const float MIN_SWITCH_TIME = .5f;
     const float MAX_SWITCH_TIME = 6f;
@@ -26,6 +27,7 @@ public class CharacterSwitcher : MonoBehaviour
     private void Start()
     {
         _controller = GetComponent<PlayerController>();
+        _animator = GetComponent<PlayerAnimator>();
         ProcessSwitch();
         StartCoroutine(SwichLoop());
     }
@@ -35,16 +37,44 @@ public class CharacterSwitcher : MonoBehaviour
         while (true)
         {
             yield return new WaitForSecondsRealtime(Random.Range(MIN_SWITCH_TIME, MAX_SWITCH_TIME));
+            _animator.StartMutation();
+            yield return new WaitForSecondsRealtime(.4f);
 
             if (!characterLock)
             {
-                character = (CHARACTERS)Random.Range(0, 4);
+                if (character == CHARACTERS.TINKY)
+                {
+                    _controller.UnlockMove();
+                }
+                else if (character == CHARACTERS.LALA)
+                {
+                    _controller.UnlockMove();
+                }
+                character = (CHARACTERS)GetNewCharacter();
+                Debug.Log("new character :  " + character);
+                _animator.GOTO((int)character);
+                _controller.EndDash();
+                if (character == CHARACTERS.LALA)
+                {
+                    _controller.LockMove();
+                }
                 ProcessSwitch();
             }
 
         }
 
     }
+
+    private int GetNewCharacter()
+    {
+        int newChara = Random.Range(0, 4);
+        while (newChara == (int)character)
+        {
+            newChara = Random.Range(0, 4);
+        }
+        return newChara;
+    }
+
 
     private void ProcessSwitch()
     {
@@ -59,7 +89,6 @@ public class CharacterSwitcher : MonoBehaviour
                 transform.GetChild(_c).gameObject.SetActive(false);
             }
         }
-        _controller.EndDash();
     }
 
     public int GetCharacterIndex()

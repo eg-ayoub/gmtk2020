@@ -18,7 +18,6 @@ public class LalaHitScanner : MonoBehaviour
     {
         if (!_ready && other.CompareTag("LalaEnemy"))
         {
-            Debug.Log("1 hit");
             enemies.Add(other.gameObject);
         }
     }
