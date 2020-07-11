@@ -13,6 +13,8 @@ public class LalaHitProcessor : HitProcessor
 
     private PlayerAnimator _animator;
 
+    private bool _ready = true;
+
     private void Start()
     {
         _hitScanner = GetComponentInChildren<LalaHitScanner>();
@@ -22,12 +24,17 @@ public class LalaHitProcessor : HitProcessor
 
     public override void ProcessHit(Vector3 towards)
     {
-        Debug.Log("lala dashes");
-        StartCoroutine(Dash(towards));
+        if (_ready)
+        {
+            Debug.Log("lala dashes");
+            StartCoroutine(Dash(towards));
+        }
+
     }
 
     private IEnumerator Dash(Vector3 dashDir)
     {
+        _ready = false;
         _hitScanner.StartHits();
 
         _counter++;
@@ -43,6 +50,7 @@ public class LalaHitProcessor : HitProcessor
         {
             enemy.GetComponent<EnemyLife>().TakeDamage(1);
         }
+        _ready = true;
         yield return null;
     }
 
