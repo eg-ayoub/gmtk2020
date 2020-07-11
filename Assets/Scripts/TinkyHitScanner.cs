@@ -30,6 +30,10 @@ public class TinkyHitScanner : MonoBehaviour
         {
             enemies.Add(other.gameObject);
         }
+        else if (!_ready && other.CompareTag("Enemy"))
+        {
+            enemies.Add(other.gameObject);
+        }
     }
 
     IEnumerator HitCoroutine()

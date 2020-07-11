@@ -12,6 +12,7 @@ TagManager:
   - DipsyEnemy
   - TinkyHit
   - LalaHit
+  - Env
   layers:
   - Default
   - TransparentFX
@@ -31,7 +32,7 @@ TagManager:
   - LalaEnemy
   - TinkyHit
   - LalaHit
-  - 
+  - Env
   - 
   - 
   - 

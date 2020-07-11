@@ -51,7 +51,6 @@ public class CharacterSwitcher : MonoBehaviour
                     _controller.UnlockMove();
                 }
                 character = (CHARACTERS)GetNewCharacter();
-                Debug.Log("new character :  " + character);
                 _animator.GOTO((int)character);
                 _controller.EndDash();
                 if (character == CHARACTERS.LALA)

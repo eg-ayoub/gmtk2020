@@ -2,22 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PoBullet : MonoBehaviour
+public class Bullet : MonoBehaviour
 {
     const float BULLET_SPEED = 100f;
     private BulletPool pool;
-    private int damage;
     public Vector3 dir;
 
-    public void Init(BulletPool iPool, int iDamage, Vector3 moveDir)
+    public void Init(BulletPool iPool, Vector3 dir)
     {
+        this.dir = dir;
         pool = iPool;
-        damage = iDamage;
-        dir = moveDir;
         StartCoroutine(AutoKill());
     }
 
-    void Update()
+    private void Update()
     {
         transform.Translate(dir * BULLET_SPEED * Time.deltaTime);
         transform.position = new Vector3(transform.position.x, transform.position.y, 0);
@@ -25,19 +23,7 @@ public class PoBullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("PoEnemy"))
-        {
-            other.gameObject.GetComponent<EnemyLife>().TakeDamage(damage);
-            StopCoroutine(AutoKill());
-            pool.Release(gameObject);
-        }
-        else if (other.CompareTag("Enemy"))
-        {
-            other.gameObject.GetComponent<EnemyLife>().TakeDamage(damage);
-            StopCoroutine(AutoKill());
-            pool.Release(gameObject);
-        }
-        else if (other.CompareTag("Env"))
+        if (other.CompareTag("Player"))
         {
             StopCoroutine(AutoKill());
             pool.Release(gameObject);
@@ -49,4 +35,6 @@ public class PoBullet : MonoBehaviour
         yield return new WaitForSecondsRealtime(10f);
         pool.Release(gameObject);
     }
+
+
 }

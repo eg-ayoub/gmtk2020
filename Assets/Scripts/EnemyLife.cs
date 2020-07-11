@@ -6,13 +6,34 @@ public class EnemyLife : MonoBehaviour
 {
     [SerializeField]
     public int hp = 1;
+
+    private bool vulnerable;
+
     public void TakeDamage(int damage)
     {
-        hp -= damage;
-        if (hp <= 0)
+        if (vulnerable)
         {
-            Destroy(gameObject);
-
+            hp -= damage;
         }
+    }
+
+    public int GetHP()
+    {
+        return hp;
+    }
+
+    public void SetHP(int iHP)
+    {
+        hp = iHP;
+    }
+
+    public void MakeInvulnerable()
+    {
+        vulnerable = false;
+    }
+
+    public void MakeVulnerable()
+    {
+        vulnerable = true;
     }
 }

@@ -16,9 +16,16 @@ public class LalaHitScanner : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D other)
     {
-        if (!_ready && other.CompareTag("LalaEnemy"))
+        if (!_ready)
         {
-            enemies.Add(other.gameObject);
+            if (other.CompareTag("LalaEnemy"))
+            {
+                enemies.Add(other.gameObject);
+            }
+            else if (other.CompareTag("Enemy"))
+            {
+                enemies.Add(other.gameObject);
+            }
         }
     }
 
