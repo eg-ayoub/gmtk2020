@@ -5,8 +5,15 @@ using UnityEngine.InputSystem;
 
 public class HitController : MonoBehaviour
 {
-
+    private Player _player;
+    private AimController _aim;
     private bool _pressed;
+
+    private void Start()
+    {
+        _aim = GetComponent<AimController>();
+        _player = GetComponent<Player>();
+    }
 
     public void ProcessHit(InputAction.CallbackContext context)
     {
@@ -20,7 +27,7 @@ public class HitController : MonoBehaviour
     {
         if (_pressed)
         {
-            Debug.Log("boom");
+            _player.DispatchHit(_aim.GetAimVector());
         }
     }
 

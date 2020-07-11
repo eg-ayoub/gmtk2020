@@ -5,7 +5,14 @@ using UnityEngine.InputSystem;
 
 public class AimController : MonoBehaviour
 {
-    private Quaternion _lookDir;
+    private Vector3 _lookDir;
+    private ArrowController _arrow;
+
+    private void Start()
+    {
+        _arrow = GetComponentInChildren<ArrowController>();
+    }
+
     private void FixedUpdate()
     {
         Mouse mouse = Mouse.current;
@@ -17,11 +24,16 @@ public class AimController : MonoBehaviour
 
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(mouse.position.ReadValue());
         mousePos.z = 0;
-
-        // _lookDir = Quaternion.LookRotation(mousePos);
-        // Vector3 _dbgLookAt = _lookDir.
-
         mousePos = transform.InverseTransformPoint(mousePos);
-        Debug.DrawRay(transform.position, 2 * mousePos.normalized);
+
+        _lookDir = mousePos;
+
+        // Debug.DrawRay(transform.position, 5 * mousePos.normalized);
+        _arrow.SetDirection(mousePos.normalized);
+    }
+
+    public Vector3 GetAimVector()
+    {
+        return _lookDir.normalized;
     }
 }

@@ -15,7 +15,10 @@ public class CharacterSwitcher : MonoBehaviour
         PO
     }
 
-    private CHARACTERS character = CHARACTERS.TINKY;
+    public CHARACTERS character = CHARACTERS.TINKY;
+
+    [SerializeField]
+    public bool characterLock;
 
     private void Start()
     {
@@ -29,8 +32,12 @@ public class CharacterSwitcher : MonoBehaviour
         {
             yield return new WaitForSecondsRealtime(Random.Range(MIN_SWITCH_TIME, MAX_SWITCH_TIME));
 
-            character = (CHARACTERS)Random.Range(0, 4);
-            ProcessSwitch();
+            if (!characterLock)
+            {
+                character = (CHARACTERS)Random.Range(0, 4);
+                ProcessSwitch();
+            }
+
         }
 
     }
