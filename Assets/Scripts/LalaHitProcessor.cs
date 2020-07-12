@@ -15,6 +15,12 @@ public class LalaHitProcessor : HitProcessor
 
     private bool _ready = true;
 
+    private void OnEnable()
+    {
+        _ready = true;
+        // Debug.Log("lala comes to the rescue");
+    }
+
     private void Start()
     {
         _hitScanner = GetComponentInChildren<LalaHitScanner>();
