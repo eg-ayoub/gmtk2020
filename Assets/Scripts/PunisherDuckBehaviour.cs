@@ -86,6 +86,7 @@ public class PunisherDuckBehaviour : MonoBehaviour
 
     IEnumerator ShootBehaviourLoop()
     {
+        // yield return null;
         while (true)
         {
             Vector2 deltaP = (Vector2)(playerTransform.position - transform.position);
@@ -96,6 +97,7 @@ public class PunisherDuckBehaviour : MonoBehaviour
                 yield return new WaitForSecondsRealtime(SHOOT_REST_TIME);
                 deltaP = (Vector2)(playerTransform.position - transform.position);
             }
+            yield return new WaitForSecondsRealtime(SHOOT_REST_TIME);
         }
     }
 
