@@ -31,7 +31,7 @@ public class BulletPool : MonoBehaviour
 
     }
 
-    public GameObject GetBullet(Transform parent)
+    public GameObject GetBullet(Transform parent, Vector3 startPos)
     {
         if (!_ready)
         {
@@ -45,7 +45,7 @@ public class BulletPool : MonoBehaviour
             if (!bullet.activeSelf)
             {
                 bullet.transform.SetParent(parent);
-                bullet.transform.position = transform.position;
+                bullet.transform.position = startPos;
                 bullet.SetActive(true);
                 return bullet;
             }
@@ -53,7 +53,7 @@ public class BulletPool : MonoBehaviour
 
         GameObject newBullet = AddBullet();
         newBullet.transform.SetParent(parent);
-        newBullet.transform.position = transform.position;
+        newBullet.transform.position = startPos;
         newBullet.SetActive(true);
         return newBullet;
 

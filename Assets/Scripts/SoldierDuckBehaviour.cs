@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class SoldierDuckBehaviour : MonoBehaviour
 {
+
+    [SerializeField]
+    Transform leftShooter;
+
+    [SerializeField]
+    Transform rightShooter;
+
     const float MOVE_REST_TIME = .5f;
     const float MOVE_TIME = 1f;
     const float MOVE_SPEED = 25;
@@ -35,7 +42,9 @@ public class SoldierDuckBehaviour : MonoBehaviour
     {
         Vector2 direction = ((Vector2)(playerTransform.position - transform.position)).normalized;
 
-        GameObject bullet = _bulletPool.GetBullet(transform.parent);
+        Vector3 shootPos = direction.x > 0 ? leftShooter.position : rightShooter.position;
+
+        GameObject bullet = _bulletPool.GetBullet(transform.parent, shootPos);
         bullet.GetComponent<Bullet>().Init(_bulletPool, direction);
     }
 

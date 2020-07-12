@@ -24,7 +24,7 @@ public class PoHitProcessor : HitProcessor
         lastHit = Time.time;
         ProcessMiss(ref towards);
 
-        GameObject bullet = _bulletPool.GetBullet(transform.parent.parent);
+        GameObject bullet = _bulletPool.GetBullet(transform.parent.parent, transform.position);
         bullet.GetComponent<PoBullet>().Init(_bulletPool, 1, towards);
     }
 

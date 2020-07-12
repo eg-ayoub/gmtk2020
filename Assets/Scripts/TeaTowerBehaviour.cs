@@ -22,7 +22,7 @@ public class TeaTowerBehaviour : MonoBehaviour
 
     public void Shoot()
     {
-        GameObject bullet = _bulletPool.GetBullet(transform);
+        GameObject bullet = _bulletPool.GetBullet(transform, transform.position);
 
         bullet.GetComponent<Bullet>().Init(_bulletPool, Quaternion.Euler(0, 0, Random.Range(0f, 360f)) * transform.right);
     }
