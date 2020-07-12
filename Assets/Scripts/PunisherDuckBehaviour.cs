@@ -6,16 +6,17 @@ public class PunisherDuckBehaviour : MonoBehaviour
 {
 
     [SerializeField]
-    Transform leftShooter;
+    public Transform leftShooter;
 
     [SerializeField]
-    Transform rightShooter;
+    public Transform rightShooter;
 
-    const float MOVE_REST_TIME = .5f;
+    const float MOVE_REST_TIME = 1f;
     const float MOVE_TIME = 1f;
     const float MOVE_SPEED = 25;
     const float FOLLOW_THRESHOLD = 200;
-    const float RUNAWAY_THRESHOLD = 100;
+    const float RUNAWAY_THRESHOLD = 50;
+    const float SHOOT_THRESHOLD = 100;
 
     const float SHOOT_REST_TIME = 1f;
 
@@ -42,12 +43,12 @@ public class PunisherDuckBehaviour : MonoBehaviour
     {
         Vector2 baseDirection = ((Vector2)(playerTransform.position - transform.position)).normalized;
 
-        Vector3 shootPos = baseDirection.x > 0 ? leftShooter.position : rightShooter.position;
+        Vector3 shootPos = baseDirection.x < 0 ? leftShooter.position : rightShooter.position;
 
         for (int _a = 0; _a < 5; _a++)
         {
             float angle = Mathf.Lerp(-45, 45, (float)_a / 4);
-            Vector2 direction = Quaternion.Euler(0, 0, angle) * Vector2.right;
+            Vector2 direction = Quaternion.Euler(0, 0, angle) * (baseDirection.x < 0 ? Vector2.left : Vector2.right);
 
             GameObject bullet = _bulletPool.GetBullet(transform.parent, shootPos);
             bullet.GetComponent<Bullet>().Init(_bulletPool, direction);
@@ -61,11 +62,11 @@ public class PunisherDuckBehaviour : MonoBehaviour
 
         if (deltaP.magnitude > FOLLOW_THRESHOLD)
         {
-            return -deltaP.normalized;
+            return deltaP.normalized;
         }
         else if (deltaP.magnitude < RUNAWAY_THRESHOLD)
         {
-            return deltaP.normalized;
+            return -deltaP.normalized;
         }
 
         return Vector2.zero;
@@ -87,8 +88,14 @@ public class PunisherDuckBehaviour : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSecondsRealtime(SHOOT_REST_TIME);
-            Shoot();
+            Vector2 deltaP = (Vector2)(playerTransform.position - transform.position);
+            while (deltaP.magnitude < SHOOT_THRESHOLD)
+            {
+                Debug.Log("shoot");
+                Shoot();
+                yield return new WaitForSecondsRealtime(SHOOT_REST_TIME);
+                deltaP = (Vector2)(playerTransform.position - transform.position);
+            }
         }
     }
 

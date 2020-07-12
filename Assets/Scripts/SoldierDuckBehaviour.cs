@@ -6,10 +6,10 @@ public class SoldierDuckBehaviour : MonoBehaviour
 {
 
     [SerializeField]
-    Transform leftShooter;
+    public Transform leftShooter;
 
     [SerializeField]
-    Transform rightShooter;
+    public Transform rightShooter;
 
     const float MOVE_REST_TIME = .5f;
     const float MOVE_TIME = 1f;
@@ -42,7 +42,7 @@ public class SoldierDuckBehaviour : MonoBehaviour
     {
         Vector2 direction = ((Vector2)(playerTransform.position - transform.position)).normalized;
 
-        Vector3 shootPos = direction.x > 0 ? leftShooter.position : rightShooter.position;
+        Vector3 shootPos = direction.x < 0 ? leftShooter.position : rightShooter.position;
 
         GameObject bullet = _bulletPool.GetBullet(transform.parent, shootPos);
         bullet.GetComponent<Bullet>().Init(_bulletPool, direction);
@@ -54,11 +54,11 @@ public class SoldierDuckBehaviour : MonoBehaviour
 
         if (deltaP.magnitude > FOLLOW_THRESHOLD)
         {
-            return -deltaP.normalized;
+            return deltaP.normalized;
         }
         else if (deltaP.magnitude < RUNAWAY_THRESHOLD)
         {
-            return deltaP.normalized;
+            return -deltaP.normalized;
         }
 
         return Vector2.zero;
