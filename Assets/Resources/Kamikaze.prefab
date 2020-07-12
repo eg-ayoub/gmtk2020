@@ -109,6 +109,7 @@ GameObject:
   - component: {fileID: 7193138754498227133}
   - component: {fileID: 7193138754498227132}
   - component: {fileID: 161200710193766300}
+  - component: {fileID: 1614548092}
   m_Layer: 15
   m_Name: Kamikaze
   m_TagString: LalaEnemy
@@ -205,3 +206,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a64709867cc4eed4ebb41424b0612b73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &1614548092
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7193138754498227129}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ef0e7a93f2b6ee240991f0ec1b308d4e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

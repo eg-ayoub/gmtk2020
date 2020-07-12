@@ -17,6 +17,24 @@ TextureImporter:
   - first:
       213: -9030651110458786048
     second: Kamikaze_4
+  - first:
+      213: 7102223958718754691
+    second: Kamikaze_0
+  - first:
+      213: -2964251599644109022
+    second: Kamikaze_1
+  - first:
+      213: 3075326535342233681
+    second: Kamikaze_2
+  - first:
+      213: 5467213855712603418
+    second: Kamikaze_3
+  - first:
+      213: 9065276220752518791
+    second: Kamikaze_4
+  - first:
+      213: -5043353742883535615
+    second: Kamikaze_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -140,8 +158,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e8a2cda857932e10800000000000000
-      internalID: 2171745852450842852
+      spriteID: 38f23beaf0b209260800000000000000
+      internalID: 7102223958718754691
       vertices: []
       indices: 
       edges: []
@@ -161,8 +179,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e125d0356db190030800000000000000
-      internalID: 3461328395941270046
+      spriteID: 227545a10ecdcd6d0800000000000000
+      internalID: -2964251599644109022
       vertices: []
       indices: 
       edges: []
@@ -182,8 +200,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c653b38f46e2aa60800000000000000
-      internalID: 7683957143433860809
+      spriteID: 158186ba031cdaa20800000000000000
+      internalID: 3075326535342233681
       vertices: []
       indices: 
       edges: []
@@ -203,8 +221,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 691fceb3b3fffce00800000000000000
-      internalID: 1067352266583634326
+      spriteID: a1de7d409027fdb40800000000000000
+      internalID: 5467213855712603418
       vertices: []
       indices: 
       edges: []
@@ -224,8 +242,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 00ffd9659aeaca280800000000000000
-      internalID: -9030651110458786048
+      spriteID: 78edfb061b45ecd70800000000000000
+      internalID: 9065276220752518791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kamikaze_5
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 9
+        width: 41
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1054acedd78620ab0800000000000000
+      internalID: -5043353742883535615
       vertices: []
       indices: 
       edges: []

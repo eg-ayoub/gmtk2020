@@ -79,9 +79,11 @@ public class SoldierDuckBehaviour : MonoBehaviour
         while (true)
         {
             yield return new WaitForSecondsRealtime(MOVE_REST_TIME);
+            GetComponent<Animator>().SetTrigger("Run");
             _rigidbody.velocity = MoveDirection() * MOVE_SPEED;
 
             yield return new WaitForSecondsRealtime(MOVE_TIME);
+            GetComponent<Animator>().SetTrigger("Stop");
             _rigidbody.velocity = Vector2.zero;
         }
     }

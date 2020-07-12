@@ -18,6 +18,7 @@ public class BlobQueenBehaviour : MonoBehaviour
     private BlobPool lalaBlobPool;
 
     private Rigidbody2D _rigidbody;
+    int lastHP;
 
     private void Start()
     {
@@ -35,6 +36,8 @@ public class BlobQueenBehaviour : MonoBehaviour
         lalaBlobPool.Init();
 
         StartCoroutine(BehaviourLoop());
+
+        lastHP = _life.GetHP();
     }
 
     private void Update()
@@ -44,6 +47,11 @@ public class BlobQueenBehaviour : MonoBehaviour
             GetComponent<EnemyParent>().GetParent().Release(gameObject);
             _life.SetHP(10);
         }
+        if (_life.GetHP() < lastHP)
+        {
+            GetComponent<Animator>().SetTrigger("Hit");
+            lastHP = _life.GetHP();
+        }
         // transform.Translate(velocity * Time.deltaTime);
     }
 
@@ -52,6 +60,8 @@ public class BlobQueenBehaviour : MonoBehaviour
         while (true)
         {
             _rigidbody.velocity = NextMoveDirection() * MOVE_SPEED;
+            GetComponent<Animator>().SetTrigger("HOP");
+
             Spawn();
             yield return new WaitForSecondsRealtime(MOVE_TIME);
 

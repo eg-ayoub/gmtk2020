@@ -12,12 +12,29 @@ public class TeaTowerBehaviour : MonoBehaviour
     const float REST_TIME = 5f;
     const int BULLET_COUNT = 30;
 
+    int lastHP;
+
     private void Start()
     {
         _bulletPool = GetComponent<BulletPool>();
         _bulletPool.Init();
         _life = GetComponent<EnemyLife>();
         StartCoroutine(BehaviourLoop());
+        lastHP = _life.GetHP();
+    }
+
+    private void Update()
+    {
+        if (_life.GetHP() <= 0)
+        {
+            Destroy(gameObject);
+        }
+
+        if (_life.GetHP() < lastHP)
+        {
+            GetComponent<Animator>().SetTrigger("Hit");
+            lastHP = _life.GetHP();
+        }
     }
 
     public void Shoot()
@@ -33,10 +50,10 @@ public class TeaTowerBehaviour : MonoBehaviour
     {
         while (true)
         {
-            _life.MakeInvulnerable();
+            // _life.MakeInvulnerable();
             yield return new WaitForSecondsRealtime(REST_TIME);
 
-            _life.MakeVulnerable();
+            // _life.MakeVulnerable();
             for (int i = 0; i < BULLET_COUNT; i++)
             {
                 Shoot();

@@ -26,6 +26,7 @@ public class BlobBehaviour : MonoBehaviour
     public void Init(BlobPool iPool)
     {
         pool = iPool;
+        playerTransform = FindObjectOfType<Player>().transform;
         StartCoroutine(BehaviourLoop());
     }
 

@@ -12,6 +12,7 @@ public class KamikazeBehaviour : MonoBehaviour
     private Rigidbody2D _rigidbody;
 
     private EnemyLife _life;
+    int lastHP;
 
     private void Start()
     {
@@ -19,6 +20,7 @@ public class KamikazeBehaviour : MonoBehaviour
         _rigidbody = GetComponent<Rigidbody2D>();
         playerTranform = FindObjectOfType<Player>().transform;
         StartCoroutine(BehaviourLoop());
+        lastHP = _life.GetHP();
     }
 
     private void Update()
@@ -27,6 +29,11 @@ public class KamikazeBehaviour : MonoBehaviour
         {
             GetComponent<EnemyParent>().GetParent().Release(gameObject);
             _life.SetHP(1);
+        }
+        if (_life.GetHP() < lastHP)
+        {
+            GetComponent<Animator>().SetTrigger("Hit");
+            lastHP = _life.GetHP();
         }
     }
 
