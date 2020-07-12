@@ -756,7 +756,7 @@ PrefabInstance:
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[0].z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
@@ -3707,7 +3707,7 @@ PrefabInstance:
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[0].z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
@@ -3801,7 +3801,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 438741333}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 150, y: 29, z: 0}
+  m_LocalPosition: {x: -3, y: 29, z: 0}
   m_LocalScale: {x: 44.550198, y: 44.550198, z: 44.550198}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4145,12 +4145,12 @@ PrefabInstance:
     - target: {fileID: 4119390102889252000, guid: 327bf3acb5a1c5d45862258cd0698ed0,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 190
+      value: 455.9
       objectReference: {fileID: 0}
     - target: {fileID: 4119390102889252000, guid: 327bf3acb5a1c5d45862258cd0698ed0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 167
+      value: 258
       objectReference: {fileID: 0}
     - target: {fileID: 4119390102889252000, guid: 327bf3acb5a1c5d45862258cd0698ed0,
         type: 3}
@@ -4321,7 +4321,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 316.4, z: -10}
+  m_LocalPosition: {x: -2.6, y: 363.7, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5138,7 +5138,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -4
   m_Sprite: {fileID: 7918522965169776436, guid: dca9e8e53d630479f813e18eca85b245,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -5220,7 +5220,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -4
   m_Sprite: {fileID: 7918522965169776436, guid: dca9e8e53d630479f813e18eca85b245,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -5969,7 +5969,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -4
   m_Sprite: {fileID: 7918522965169776436, guid: dca9e8e53d630479f813e18eca85b245,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -6714,7 +6714,7 @@ PrefabInstance:
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[0].z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
@@ -7458,7 +7458,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -4
   m_Sprite: {fileID: 7918522965169776436, guid: dca9e8e53d630479f813e18eca85b245,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -8029,7 +8029,7 @@ PrefabInstance:
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[2].z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
@@ -8044,7 +8044,7 @@ PrefabInstance:
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[3].z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
@@ -8059,7 +8059,7 @@ PrefabInstance:
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[4].z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
@@ -8154,22 +8154,22 @@ PrefabInstance:
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[0].y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[0].z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[1].y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[1].z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
@@ -9105,7 +9105,7 @@ PrefabInstance:
     - target: {fileID: 2179168195852990091, guid: aa3cf7925535b5f4195165c00804561d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 167.5
+      value: 258.5
       objectReference: {fileID: 0}
     - target: {fileID: 2179168195852990091, guid: aa3cf7925535b5f4195165c00804561d,
         type: 3}
@@ -9833,7 +9833,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1065389121}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 316.4, z: -10}
+  m_LocalPosition: {x: -2.6, y: 363.7, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 526661318}
@@ -10740,12 +10740,12 @@ PrefabInstance:
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[2].y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[2].z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
@@ -10755,12 +10755,12 @@ PrefabInstance:
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[3].y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[3].z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
@@ -10770,12 +10770,12 @@ PrefabInstance:
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[4].y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[4].z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
@@ -10785,7 +10785,7 @@ PrefabInstance:
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[5].y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
@@ -10800,7 +10800,7 @@ PrefabInstance:
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[6].y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
@@ -10870,22 +10870,22 @@ PrefabInstance:
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[0].y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[0].z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[1].y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[1].z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
@@ -11394,12 +11394,12 @@ PrefabInstance:
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[0].y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[0].z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
@@ -11409,7 +11409,7 @@ PrefabInstance:
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[1].z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
@@ -11644,7 +11644,7 @@ PrefabInstance:
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[0].z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
@@ -12024,7 +12024,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -4
   m_Sprite: {fileID: 7918522965169776436, guid: dca9e8e53d630479f813e18eca85b245,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -12284,7 +12284,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -4
   m_Sprite: {fileID: 7918522965169776436, guid: dca9e8e53d630479f813e18eca85b245,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -12518,12 +12518,12 @@ PrefabInstance:
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[0].y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[0].z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
@@ -12533,7 +12533,7 @@ PrefabInstance:
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[1].z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
@@ -13145,7 +13145,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -4
   m_Sprite: {fileID: 7918522965169776436, guid: dca9e8e53d630479f813e18eca85b245,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -13967,12 +13967,12 @@ PrefabInstance:
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[0].y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[0].z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
@@ -13982,7 +13982,7 @@ PrefabInstance:
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[1].z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
@@ -14420,12 +14420,12 @@ PrefabInstance:
     - target: {fileID: 6961915410161855438, guid: 612d8f8e922e869499d102b654655bd0,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -185
+      value: -461.2
       objectReference: {fileID: 0}
     - target: {fileID: 6961915410161855438, guid: 612d8f8e922e869499d102b654655bd0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 166
+      value: 257
       objectReference: {fileID: 0}
     - target: {fileID: 6961915410161855438, guid: 612d8f8e922e869499d102b654655bd0,
         type: 3}
@@ -14700,7 +14700,7 @@ PrefabInstance:
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[0].z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
@@ -14810,12 +14810,12 @@ PrefabInstance:
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[2].y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[2].z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
@@ -14825,12 +14825,12 @@ PrefabInstance:
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[3].y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[3].z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
@@ -14845,7 +14845,7 @@ PrefabInstance:
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[4].z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
@@ -14855,12 +14855,12 @@ PrefabInstance:
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[5].y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[5].z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
@@ -14940,22 +14940,22 @@ PrefabInstance:
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[0].y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[0].z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[1].y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[1].z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
@@ -16420,7 +16420,7 @@ PrefabInstance:
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[2].z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
@@ -16435,7 +16435,7 @@ PrefabInstance:
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[3].z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
@@ -16450,7 +16450,7 @@ PrefabInstance:
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[4].z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
@@ -16545,22 +16545,22 @@ PrefabInstance:
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[0].y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[0].z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[1].y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[1].z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
@@ -17070,12 +17070,12 @@ PrefabInstance:
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[2].y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[2].z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
@@ -17085,12 +17085,12 @@ PrefabInstance:
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[3].y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[3].z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
@@ -17100,12 +17100,12 @@ PrefabInstance:
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[4].y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[4].z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
@@ -17115,7 +17115,7 @@ PrefabInstance:
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[5].y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
@@ -17200,22 +17200,22 @@ PrefabInstance:
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[0].y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[0].z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[1].y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[1].z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
@@ -18023,7 +18023,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -4
   m_Sprite: {fileID: 7918522965169776436, guid: dca9e8e53d630479f813e18eca85b245,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -18604,7 +18604,7 @@ PrefabInstance:
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
       propertyPath: difficultyCurve.Array.data[0].z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1424540155316658734, guid: e32b45404d1837f4697ed877f4e7d834,
         type: 3}
@@ -20032,12 +20032,12 @@ PrefabInstance:
     - target: {fileID: 1293887217460907053, guid: 317b987579477f04a972e4e24f597524,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -2.6
       objectReference: {fileID: 0}
     - target: {fileID: 1293887217460907053, guid: 317b987579477f04a972e4e24f597524,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 316.4
+      value: 363.7
       objectReference: {fileID: 0}
     - target: {fileID: 1293887217460907053, guid: 317b987579477f04a972e4e24f597524,
         type: 3}
