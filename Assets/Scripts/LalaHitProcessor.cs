@@ -49,12 +49,13 @@ public class LalaHitProcessor : HitProcessor
 
         _controller.StartDash(dashDir);
         _animator.Attack();
+        PlayAudio();
         yield return new WaitForSecondsRealtime(.25f);
         _controller.EndDash();
         // have to process dash ?
         foreach (GameObject enemy in _hitScanner.EndHits())
         {
-            enemy.GetComponent<EnemyLife>().TakeDamage(1);
+            enemy.GetComponent<EnemyLife>().TakeDamage(2);
         }
         _ready = true;
         yield return null;

@@ -42,10 +42,11 @@ public class TinkyHitScanner : MonoBehaviour
         enemies = new HashSet<GameObject>();
         _controller.LockMove();
         _animator.Attack();
+        GetComponentInParent<TinkyHitProcessor>().PlayAudio();
         yield return new WaitForSecondsRealtime(.15f);
         foreach (GameObject enemy in enemies)
         {
-            enemy.GetComponent<EnemyLife>().TakeDamage(1);
+            enemy.GetComponent<EnemyLife>().TakeDamage(3);
         }
         enemies.Clear();
         _controller.UnlockMove();

@@ -108,6 +108,7 @@ GameObject:
   - component: {fileID: 7193138754498227135}
   - component: {fileID: 7193138754498227133}
   - component: {fileID: 7193138754498227132}
+  - component: {fileID: 161200710193766300}
   m_Layer: 15
   m_Name: Kamikaze
   m_TagString: LalaEnemy
@@ -190,5 +191,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a1718bd55a41d6947ae40ad12c9a47ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &161200710193766300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7193138754498227129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a64709867cc4eed4ebb41424b0612b73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

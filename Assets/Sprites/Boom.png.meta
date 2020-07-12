@@ -1,16 +1,88 @@
 fileFormatVersion: 2
-guid: b2e6d0afa85d3fe44a2ee2e87968d940
+guid: 3d3fa221624c5db44b57124564f4486c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1481276029005078655
-    second: EnemyBlob_0
+      213: 7034660610512690298
+    second: Boom_0
   - first:
-      213: 8434965606214525974
-    second: EnemyBlob_1
+      213: -8874246152023096229
+    second: Boom_1
   - first:
-      213: -6121217386603990215
-    second: EnemyBlob_2
+      213: 4221536321085816454
+    second: Boom_2
+  - first:
+      213: -7015227078107275993
+    second: Boom_3
+  - first:
+      213: -9174831917299113538
+    second: Boom_4
+  - first:
+      213: 4866456461726170714
+    second: Boom_5
+  - first:
+      213: -4637372867516582897
+    second: Boom_6
+  - first:
+      213: -7736590790072129272
+    second: Boom_7
+  - first:
+      213: -2281317386447823279
+    second: Boom_8
+  - first:
+      213: -5165321498635441078
+    second: Boom_9
+  - first:
+      213: 9185369822335819737
+    second: Boom_10
+  - first:
+      213: 4880753605998566757
+    second: Boom_11
+  - first:
+      213: -2724324735537979317
+    second: Boom_12
+  - first:
+      213: -804956749596969146
+    second: Boom_13
+  - first:
+      213: 4202486062909278171
+    second: Boom_14
+  - first:
+      213: -2623007795118903731
+    second: Boom_15
+  - first:
+      213: -7631404033018189531
+    second: Boom_16
+  - first:
+      213: 3650699929217689379
+    second: Boom_17
+  - first:
+      213: -7160334597472741672
+    second: Boom_18
+  - first:
+      213: 8761131828157412588
+    second: Boom_19
+  - first:
+      213: 3934516840706091368
+    second: Boom_20
+  - first:
+      213: -6056631244051826170
+    second: Boom_21
+  - first:
+      213: -5919723131737052341
+    second: Boom_22
+  - first:
+      213: -5846114906387167231
+    second: Boom_23
+  - first:
+      213: 3822546599231552774
+    second: Boom_24
+  - first:
+      213: 7025217197543390043
+    second: Boom_25
+  - first:
+      213: -5575644580950544536
+    second: Boom_26
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -106,70 +178,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: EnemyBlob_0
-      rect:
-        serializedVersion: 2
-        x: 15
-        y: 10
-        width: 24
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 18fd9dcbc43717be0800000000000000
-      internalID: -1481276029005078655
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: EnemyBlob_1
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 10
-        width: 24
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 614ed0b47840f0570800000000000000
-      internalID: 8434965606214525974
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: EnemyBlob_2
-      rect:
-        serializedVersion: 2
-        x: 81
-        y: 10
-        width: 24
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 933368ee7311d0ba0800000000000000
-      internalID: -6121217386603990215
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []

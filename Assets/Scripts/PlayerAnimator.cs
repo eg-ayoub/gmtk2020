@@ -25,4 +25,14 @@ public class PlayerAnimator : MonoBehaviour
     {
         animator.SetTrigger("Attack");
     }
+
+    public void Die()
+    {
+        animator.SetTrigger("Die");
+    }
+
+    public void Hit()
+    {
+        animator.SetTrigger("Hit");
+    }
 }

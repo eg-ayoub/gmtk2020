@@ -26,6 +26,7 @@ public class PoHitProcessor : HitProcessor
 
         GameObject bullet = _bulletPool.GetBullet(transform.parent.parent, transform.position);
         bullet.GetComponent<PoBullet>().Init(_bulletPool, 1, towards);
+        PlayAudio();
     }
 
     public void ProcessMiss(ref Vector3 aimVector)

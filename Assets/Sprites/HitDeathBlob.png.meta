@@ -1,0 +1,620 @@
+fileFormatVersion: 2
+guid: 371da32a4139dfe439102a97fc41a8ca
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4358014341861281879
+    second: HitDeathBlob_0
+  - first:
+      213: -2366500104503116566
+    second: HitDeathBlob_1
+  - first:
+      213: 7505818130941613546
+    second: HitDeathBlob_2
+  - first:
+      213: 3472262691324773295
+    second: HitDeathBlob_3
+  - first:
+      213: -8488262336521371810
+    second: HitDeathBlob_4
+  - first:
+      213: 4719728647579930439
+    second: HitDeathBlob_5
+  - first:
+      213: -4389120799039181499
+    second: HitDeathBlob_6
+  - first:
+      213: -4903001316798499086
+    second: HitDeathBlob_7
+  - first:
+      213: -3182799478177868842
+    second: HitDeathBlob_8
+  - first:
+      213: 2785810826587673960
+    second: HitDeathBlob_9
+  - first:
+      213: -3408854837951962036
+    second: HitDeathBlob_10
+  - first:
+      213: -6895856952001992461
+    second: HitDeathBlob_11
+  - first:
+      213: -3086739754997584577
+    second: HitDeathBlob_12
+  - first:
+      213: -6980337587834268452
+    second: HitDeathBlob_13
+  - first:
+      213: 3083608544102859593
+    second: HitDeathBlob_14
+  - first:
+      213: -8455802597681409926
+    second: HitDeathBlob_15
+  - first:
+      213: -5523435272805972520
+    second: HitDeathBlob_16
+  - first:
+      213: 7883995214286810946
+    second: HitDeathBlob_17
+  - first:
+      213: -8141057018962364068
+    second: HitDeathBlob_18
+  - first:
+      213: 914439130228022085
+    second: HitDeathBlob_19
+  - first:
+      213: 8311657871497184034
+    second: HitDeathBlob_20
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HitDeathBlob_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 53
+        width: 29
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9afec4bbb093583c0800000000000000
+      internalID: -4358014341861281879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HitDeathBlob_1
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 53
+        width: 32
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aecba2671b0882fd0800000000000000
+      internalID: -2366500104503116566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HitDeathBlob_2
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 53
+        width: 36
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae5167392d50a2860800000000000000
+      internalID: 7505818130941613546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HitDeathBlob_4
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 3
+        width: 29
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5ff05fa062a33a80800000000000000
+      internalID: -8488262336521371810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HitDeathBlob_5
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 28
+        width: 29
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74f8c33e238df7140800000000000000
+      internalID: 4719728647579930439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HitDeathBlob_6
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 3
+        width: 32
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54dadf843e5b613c0800000000000000
+      internalID: -4389120799039181499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HitDeathBlob_7
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 28
+        width: 32
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f6f3f2974a05fbb0800000000000000
+      internalID: -4903001316798499086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HitDeathBlob_8
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 3
+        width: 36
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d3d8efdcbc64d3d0800000000000000
+      internalID: -3182799478177868842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HitDeathBlob_9
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 28
+        width: 36
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 865123adf2039a620800000000000000
+      internalID: 2785810826587673960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HitDeathBlob_12
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 3
+        width: 36
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3dea4d0c82b925d0800000000000000
+      internalID: -3086739754997584577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HitDeathBlob_13
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 28
+        width: 36
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd4d4d082fbd02f90800000000000000
+      internalID: -6980337587834268452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HitDeathBlob_14
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 53
+        width: 36
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9434c9912ad2bca20800000000000000
+      internalID: 3083608544102859593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HitDeathBlob_15
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 3
+        width: 37
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a70df529654f6aa80800000000000000
+      internalID: -8455802597681409926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HitDeathBlob_16
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 28
+        width: 37
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d5898042e0d853b0800000000000000
+      internalID: -5523435272805972520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HitDeathBlob_3
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 53
+        width: 37
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa3414b5584ff2030800000000000000
+      internalID: 3472262691324773295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HitDeathBlob_10
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 53
+        width: 25
+        height: 3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c446005f59051b0d0800000000000000
+      internalID: -3408854837951962036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HitDeathBlob_11
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 28
+        width: 25
+        height: 3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f8630253aefc40a0800000000000000
+      internalID: -6895856952001992461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HitDeathBlob_17
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 3
+        width: 25
+        height: 3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24fe17e40e3996d60800000000000000
+      internalID: 7883995214286810946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HitDeathBlob_18
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 53
+        width: 12
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c593c8046c7250f80800000000000000
+      internalID: -8141057018962364068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HitDeathBlob_19
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 28
+        width: 12
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54b55f54b8db0bc00800000000000000
+      internalID: 914439130228022085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HitDeathBlob_20
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 3
+        width: 12
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2234b2d0cc0f85370800000000000000
+      internalID: 8311657871497184034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

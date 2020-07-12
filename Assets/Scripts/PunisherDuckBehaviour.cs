@@ -54,6 +54,17 @@ public class PunisherDuckBehaviour : MonoBehaviour
             bullet.GetComponent<Bullet>().Init(_bulletPool, direction);
         }
 
+        GetComponent<AudioSource>().Play();
+
+    }
+
+    private void Update()
+    {
+        if (_life.GetHP() <= 0)
+        {
+            GetComponent<EnemyParent>().GetParent().Release(gameObject);
+            _life.SetHP(6);
+        }
     }
 
     private Vector2 MoveDirection()

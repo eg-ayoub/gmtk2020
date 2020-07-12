@@ -15,21 +15,42 @@ public class BlobBehaviour : MonoBehaviour
 
     private Rigidbody2D _rigidbody;
 
-    public void Init(int hp, BlobPool iPool)
+    private void Start()
     {
-        pool = iPool;
         _life = GetComponent<EnemyLife>();
-        _life.SetHP(hp);
+        _life.SetHP(2);
         _rigidbody = GetComponent<Rigidbody2D>();
         playerTransform = FindObjectOfType<Player>().transform;
+    }
+
+    public void Init(BlobPool iPool)
+    {
+        pool = iPool;
         StartCoroutine(BehaviourLoop());
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("PlayerHealth"))
+        {
+            FindObjectOfType<PlayerLife>().TakeDamage();
+        }
     }
 
     private void Update()
     {
-        if (_life.GetHP() == 0)
+        if (_life.GetHP() <= 0)
         {
-            pool.Release(gameObject);
+            if (pool != null)
+            {
+                pool.Release(gameObject);
+                _life.SetHP(2);
+            }
+            else
+            {
+                Destroy(gameObject, .1f);
+            }
+
         }
         // transform.Translate(((Vector2)(playerTransform.position - transform.position)).normalized * velocity * Time.deltaTime);
     }

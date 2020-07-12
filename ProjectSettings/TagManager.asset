@@ -13,6 +13,7 @@ TagManager:
   - TinkyHit
   - LalaHit
   - Env
+  - PlayerHealth
   layers:
   - Default
   - TransparentFX
@@ -33,7 +34,7 @@ TagManager:
   - TinkyHit
   - LalaHit
   - Env
-  - 
+  - PlayerHealth
   - 
   - 
   - 

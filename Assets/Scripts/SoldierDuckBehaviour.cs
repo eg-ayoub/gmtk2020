@@ -38,6 +38,15 @@ public class SoldierDuckBehaviour : MonoBehaviour
         StartCoroutine(ShootBehaviourLoop());
     }
 
+    private void Update()
+    {
+        if (_life.GetHP() <= 0)
+        {
+            GetComponent<EnemyParent>().GetParent().Release(gameObject);
+            _life.SetHP(4);
+        }
+    }
+
     private void Shoot()
     {
         Vector2 direction = ((Vector2)(playerTransform.position - transform.position)).normalized;
@@ -46,6 +55,7 @@ public class SoldierDuckBehaviour : MonoBehaviour
 
         GameObject bullet = _bulletPool.GetBullet(transform.parent, shootPos);
         bullet.GetComponent<Bullet>().Init(_bulletPool, direction);
+        GetComponent<AudioSource>().Play();
     }
 
     private Vector2 MoveDirection()

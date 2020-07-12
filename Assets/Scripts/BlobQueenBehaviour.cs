@@ -39,9 +39,10 @@ public class BlobQueenBehaviour : MonoBehaviour
 
     private void Update()
     {
-        if (_life.GetHP() == 0)
+        if (_life.GetHP() <= 0)
         {
-            Destroy(gameObject);
+            GetComponent<EnemyParent>().GetParent().Release(gameObject);
+            _life.SetHP(10);
         }
         // transform.Translate(velocity * Time.deltaTime);
     }
@@ -78,7 +79,7 @@ public class BlobQueenBehaviour : MonoBehaviour
     {
         int which = Random.Range(0, 3);
         GameObject blob = WhichPool(which).GetBlob(transform.parent);
-        blob.GetComponent<BlobBehaviour>().Init(2, WhichPool(which));
+        blob.GetComponent<BlobBehaviour>().Init(WhichPool(which));
     }
 
     private BlobPool WhichPool(int index)

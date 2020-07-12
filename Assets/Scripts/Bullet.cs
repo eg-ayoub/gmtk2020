@@ -26,7 +26,13 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("PlayerHealth"))
+        {
+            StopCoroutine(AutoKill());
+            FindObjectOfType<PlayerLife>().TakeDamage();
+            pool.Release(gameObject);
+        }
+        else if (other.CompareTag("Player"))
         {
             StopCoroutine(AutoKill());
             pool.Release(gameObject);

@@ -23,9 +23,10 @@ public class KamikazeBehaviour : MonoBehaviour
 
     private void Update()
     {
-        if (_life.GetHP() == 0)
+        if (_life.GetHP() <= 0)
         {
-            Destroy(gameObject);
+            GetComponent<EnemyParent>().GetParent().Release(gameObject);
+            _life.SetHP(1);
         }
     }
 

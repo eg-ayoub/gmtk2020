@@ -105,6 +105,7 @@ GameObject:
   - component: {fileID: 3940231841877250126}
   - component: {fileID: 3940231841877250125}
   - component: {fileID: 3940231841877250127}
+  - component: {fileID: 4036638969580676752}
   m_Layer: 11
   m_Name: Queen
   m_TagString: Enemy
@@ -153,7 +154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba4b42373edffbd40a6546c4267105a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 2
+  hp: 10
 --- !u!50 &3940231841877250124
 Rigidbody2D:
   serializedVersion: 4
@@ -271,6 +272,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &4036638969580676752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3940231841877250120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a64709867cc4eed4ebb41424b0612b73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3940231841933586917
 GameObject:
   m_ObjectHideFlags: 0
