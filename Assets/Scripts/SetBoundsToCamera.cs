@@ -16,7 +16,7 @@ public class SetBoundsToCamera : MonoBehaviour
         Vector2 bottomleft = cam.ViewportToWorldPoint(new Vector3(0, 1));
         Vector2 bottomright = cam.ViewportToWorldPoint(new Vector3(1, 1));
 
-        Vector2[] points = { topleft, topright, bottomright, bottomleft };
+        Vector2[] points = { topleft, topright, bottomright, bottomleft, topleft };
 
         edge.points = points;
 

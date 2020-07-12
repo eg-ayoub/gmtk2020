@@ -28,6 +28,11 @@ public class Bullet : MonoBehaviour
             StopCoroutine(AutoKill());
             pool.Release(gameObject);
         }
+        else if (other.CompareTag("Env"))
+        {
+            StopCoroutine(AutoKill());
+            pool.Release(gameObject);
+        }
     }
 
     IEnumerator AutoKill()

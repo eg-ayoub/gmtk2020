@@ -9,7 +9,8 @@ public class TeaTowerBehaviour : MonoBehaviour
 
     private EnemyLife _life;
 
-    const float REST_TIME = 1f;
+    const float REST_TIME = 5f;
+    const int BULLET_COUNT = 30;
 
     private void Start()
     {
@@ -34,6 +35,12 @@ public class TeaTowerBehaviour : MonoBehaviour
             yield return new WaitForSecondsRealtime(REST_TIME);
 
             _life.MakeVulnerable();
+            for (int i = 0; i < BULLET_COUNT; i++)
+            {
+                Shoot();
+                yield return new WaitForSecondsRealtime(.05f);
+            }
+
         }
     }
 
