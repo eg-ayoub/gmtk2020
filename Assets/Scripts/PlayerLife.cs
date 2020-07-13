@@ -29,6 +29,7 @@ public class PlayerLife : MonoBehaviour
     {
         if (Time.time - lastHit >= INVULN_COOLDOWN && vulnerable)
         {
+            FindObjectOfType<CameraShaker>().Shake();
             lastHit = Time.time;
             Debug.Log("ouch");
             hp -= 1;
