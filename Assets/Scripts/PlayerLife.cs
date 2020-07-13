@@ -16,6 +16,13 @@ public class PlayerLife : MonoBehaviour
     private void Start()
     {
         lastHit = Time.time;
+        FindObjectOfType<HPDisplay>().SetHP(hp);
+    }
+
+    public void Heal()
+    {
+        hp = Mathf.Clamp(hp + 2, 0, 6);
+        FindObjectOfType<HPDisplay>().SetHP(hp);
     }
 
     public void TakeDamage()
@@ -33,7 +40,7 @@ public class PlayerLife : MonoBehaviour
                 StartCoroutine(ResetAfterAnimation());
             }
         }
-
+        FindObjectOfType<HPDisplay>().SetHP(hp);
     }
 
     IEnumerator ResetAfterAnimation()
