@@ -55,7 +55,10 @@ public class LalaHitProcessor : HitProcessor
         // have to process dash ?
         foreach (GameObject enemy in _hitScanner.EndHits())
         {
-            enemy.GetComponent<EnemyLife>().TakeDamage(2);
+            if (enemy != null)
+            {
+                enemy.GetComponent<EnemyLife>().TakeDamage(2);
+            }
         }
         _ready = true;
         yield return null;

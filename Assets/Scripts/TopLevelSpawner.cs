@@ -28,7 +28,7 @@ public class TopLevelSpawner : MonoBehaviour
     IEnumerator SpawnLoop()
     {
 
-        yield return new WaitForSecondsRealtime(20);
+        // yield return new WaitForSecondsRealtime(20);
 
         foreach (Vector3Int data in difficultyCurve)
         {
@@ -40,6 +40,7 @@ public class TopLevelSpawner : MonoBehaviour
                     Spawn();
                     yield return new WaitForSecondsRealtime(data.z);
                 }
+                yield return new WaitForSecondsRealtime(.1f);
             }
 
         }

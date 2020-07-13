@@ -46,7 +46,10 @@ public class TinkyHitScanner : MonoBehaviour
         yield return new WaitForSecondsRealtime(.15f);
         foreach (GameObject enemy in enemies)
         {
-            enemy.GetComponent<EnemyLife>().TakeDamage(3);
+            if (enemy != null)
+            {
+                enemy.GetComponent<EnemyLife>().TakeDamage(3);
+            }
         }
         enemies.Clear();
         _controller.UnlockMove();
