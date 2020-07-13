@@ -42,6 +42,7 @@ public class LalaHitProcessor : HitProcessor
     {
         _ready = false;
         _hitScanner.StartHits();
+        transform.parent.GetComponent<PlayerLife>().MakeInvulnerable();
 
         _counter++;
         lastHit = Time.time;
@@ -52,6 +53,7 @@ public class LalaHitProcessor : HitProcessor
         PlayAudio();
         yield return new WaitForSecondsRealtime(.25f);
         _controller.EndDash();
+        transform.parent.GetComponent<PlayerLife>().MakeVulnerable();
         // have to process dash ?
         foreach (GameObject enemy in _hitScanner.EndHits())
         {

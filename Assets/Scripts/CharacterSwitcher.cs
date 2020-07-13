@@ -53,6 +53,7 @@ public class CharacterSwitcher : MonoBehaviour
                 character = (CHARACTERS)GetNewCharacter();
                 _animator.GOTO((int)character);
                 _controller.EndDash();
+                GetComponent<PlayerLife>().MakeVulnerable();
                 if (character == CHARACTERS.LALA)
                 {
                     _controller.LockMove();

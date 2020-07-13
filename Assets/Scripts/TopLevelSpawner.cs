@@ -28,21 +28,28 @@ public class TopLevelSpawner : MonoBehaviour
     IEnumerator SpawnLoop()
     {
 
-        // yield return new WaitForSecondsRealtime(20);
+        int spawnCount = 0;
+        yield return new WaitForSecondsRealtime(10);
 
         foreach (Vector3Int data in difficultyCurve)
         {
             float timeRecord = Time.time;
             while (Time.time - timeRecord <= data.x)
             {
-                if (enemyPool.Count() < data.y)
+                if (spawnCount < data.y)
                 {
                     Spawn();
+                    spawnCount++;
                     yield return new WaitForSecondsRealtime(data.z);
                 }
-                yield return new WaitForSecondsRealtime(.1f);
+                yield return new WaitForSecondsRealtime(.5f);
             }
 
+            while (enemyPool.Count() != 0)
+            {
+                yield return new WaitForSecondsRealtime(.5f);
+            }
+            spawnCount = 0;
         }
 
         while (true)
